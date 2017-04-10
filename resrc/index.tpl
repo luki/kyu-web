@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <link type="text/css" rel="stylesheet" href="main.css"> -->
+    <title>KYŪ</title>
+    <style>
+      h1,h2,h3,h4,h5,h6,div,span,p,body,img {
+        margin: 0;
+      }
+
+      body {
+        background-color: #0e0e0e;
+        height: 100%;
+        width: 100%;
+      }
+
+      #logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -50px 0px 0px -50px;
+        height: 86.0625px;
+        width: 200.175px;
+      }
+
+      #copyright {
+        bottom: 0;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        color: #fff;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="logo" src="http://i.imgur.com/4Wlx0qG.png">
+    <!-- <span id="copyright">© 2017 KYŪ. All Rights Reserved.</span> -->
+  </body>
+</html>

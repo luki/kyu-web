@@ -2,6 +2,7 @@
 
 use nickel::{Nickel, HttpRouter};
 use std::env;
+use std::collections::HashMap;
 
 const DEF_ADDR: &'static str = "0.0.0.0";
 const PORT_KEY: &'static str = "PORT";
@@ -14,7 +15,11 @@ fn main() {
 
     // Get, Posts, ...
 
-    server.get("/", middleware!("Hello, World!"));
+    server.get("/", middleware! { |_, res|
+        let mut data = HashMap::new();
+        data.insert("title", "user");
+        return res.render("resrc/index.tpl", &data)
+    });
 
     // Starting The Server
 
